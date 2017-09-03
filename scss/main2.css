@@ -6,7 +6,9 @@ a {
 
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
-  color: #222; }
+  color: #222;
+  color: #0a0f32;
+  background-color: white; }
 
 h1, h2, h3, h4 {
   font-family: "Titillium Web", Georgia, serif; }
@@ -20,11 +22,15 @@ p {
 
 a {
   color: #f27731; }
+  a:hover {
+    color: #ca510d; }
 
 .warning-button {
   background-color: orange;
   color: #ffffff;
   padding: 8px 12px; }
+  .warning-button:hover {
+    background-color: #ffc04d; }
 
 * html body {
   font-size: 125%; }
@@ -40,7 +46,13 @@ a {
   #header #main-menu li {
     display: inline; }
   #header #main-menu a {
-    color: white; }
+    color: white;
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(254, 254, 254, 0);
+    transition: border-bottom 0.5s;
+    transition-timing-function: ease-in-out; }
+    #header #main-menu a:hover {
+      border-bottom: 1px solid #fefefe; }
 
 #main {
   width: 960px;
