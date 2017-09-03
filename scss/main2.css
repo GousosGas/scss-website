@@ -1,0 +1,31 @@
+body {
+  font-family: Verdana, Arial, sans-serif;
+  color: #222; }
+
+h1, h2, h3, h4 {
+  font-family: "latino Linotype", Georgia, serif; }
+
+p {
+  font-family: Verdana, Arial, sans-serif; }
+
+a {
+  color: #f27731; }
+
+#header {
+  height: 60px;
+  background-color: #170a48; }
+  #header #main-menu li {
+    display: inline; }
+  #header #main-menu a {
+    color: white; }
+
+#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#footer {
+  height: 90px;
+  background-color: #ccf962; }
+
+/*# sourceMappingURL=main2.css.map */
