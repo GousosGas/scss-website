@@ -1,0 +1,43 @@
+@mixin warning{
+  background-color: orange;
+  color: #ffffff;
+}
+
+@mixin large-text{
+  font:{
+    size:22px;
+    weight: bold;
+  }
+}
+
+//mixin inside mixing
+
+//mixin with argument
+@mixin rounded($radius:6px){
+  border-radius: $radius;
+}
+
+@mixin box($radius:6px, $border:1px solid grey){
+  @include rounded($radius);
+  border:$border;
+}
+
+@mixin fancy-links{
+  a{
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+
+@mixin box-shadow($shadows...){
+  box-shadow:$shadows;
+  -moz-box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+
+}
+
+@mixin apply-to-ie-6{
+  * html{
+    @content;
+  }
+}
